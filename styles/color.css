@@ -1,0 +1,9 @@
+.next,
+.previous {
+  color: white;
+  background: hotpink;
+}
+
+img {
+  border: solid 2px pink;
+}

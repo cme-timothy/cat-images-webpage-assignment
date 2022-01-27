@@ -1,0 +1,54 @@
+main {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.next,
+.previous {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+.next:disabled,
+.previous:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+img:hover {
+  animation: heartbeat 0.25s infinite;
+  animation-direction: alternate;
+}
+
+/* image heartbeat animation */
+@keyframes heartbeat {
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.next,
+.previous {
+  font-size: 1.2rem;
+}
+
+.page-indicator {
+  font-size: 1rem;
+}
